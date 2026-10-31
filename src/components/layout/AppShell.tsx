@@ -1,4 +1,5 @@
 import type { ReactNode } from 'react';
+import { QuickConsultationDialog } from '@/features/consultation/QuickConsultationDialog';
 import { Header } from './Header';
 import { MobileNav } from './MobileNav';
 import { Sidebar } from './Sidebar';
@@ -8,6 +9,7 @@ export function AppShell({ children }: { children: ReactNode }) {
     <div className="flex h-dvh overflow-hidden bg-slate-50">
       <Sidebar />
       <MobileNav />
+      <QuickConsultationDialog />
       <div className="flex min-w-0 flex-1 flex-col">
         <Header />
         <main className="flex-1 overflow-y-auto p-4 md:p-6">{children}</main>
